@@ -1,9 +1,23 @@
 <!doctype html>
-<title>Flood</title>
-<!-- <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> -->
-<div class=page>
+<head>
+  <title>Flood</title>
+
+  <!-- This is a link to the bootstrap css from bootstrap CDN. http://getbootstrap.com/css/ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- This is a link to the application's css -->
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- This is a link to the bootstrap javascript include from bootstrap CDN. -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <!-- This ensures everything will play nice with mobile. See: http://getbootstrap.com/css/#overview-mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div class="col-md-8">
   <h1>Flood</h1>
-  <div class=metanav>
+  <div class="metanav">
   </div>
   {% block body %}{% endblock %}
 </div>
